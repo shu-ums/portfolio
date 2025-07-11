@@ -9,15 +9,22 @@
 body {
   margin: 0;
   padding: 2rem;
-  background-color: #e5e4e2; /* Platinum grey */
+  background-color: #1a1a1a;
   font-family: 'Inter', sans-serif;
-  color: #1c1c1c;
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   text-align: center;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #1a1a1a,
+    #1a1a1a 10px,
+    #1c1c1c 10px,
+    #1c1c1c 20px
+  );
 }
 
 /* Stylish heading font */
@@ -25,7 +32,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: #f5f5f5;
 }
 
 /* Paragraph styling */
@@ -41,15 +48,15 @@ a {
   margin-top: 20px;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #333;
-  color: white;
+  background-color: #444;
+  color: #f0f0f0;
   border-radius: 6px;
   transition: background 0.3s ease, transform 0.1s ease;
 }
 
 /* Hover + Tap animation */
 a:hover {
-  background-color: #555;
+  background-color: #666;
 }
 
 a:active {
@@ -103,4 +110,44 @@ a {
     padding: 8px 16px;
     font-size: 0.95rem;
   }
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  padding: 5px;
+}
+
+.projects {
+  margin-top: 3rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
